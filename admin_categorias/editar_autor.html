@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshopfree</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.css" />
+    
+  </head>
+  <body>
+    <section class="section1">
+      <p class="p_increver-se">
+        Receba convites, sugestões de livros e novidades exclusivas!
+      </p>
+      <input
+      class="input_do_topo"
+        type="text"
+        name=""
+        id=""
+        placeholder="Email:"
+      />
+      <button class="btn_increver-se" type="submit">Inscrever-se</button>
+    </section>
+    <section class="section2">
+      <div class="div_logo">
+        <img
+          class="logotipo"
+          src="../logotipos/log.png"
+          alt=""
+        />
+      </div>
+      <div class="s2_itens2">
+        <div>
+          <a href="header.html"><i class="fa-solid fa-house"></i></a>
+          <p>HOME</p>
+        </div>
+        <div>
+          <button id="btn_filtro" onclick="AbrirFecharFiltro()"><i   id="icone_filtro" class="fa-solid fa-greater-than"></i> </button>
+          <p>Filtro</p>
+        </div>
+        <div>
+          <a href=""><i class="fa-solid fa-exclamation"></i></a>
+        <P>SOBRE NÓS</P>
+        </div>
+      </div>
+      <div class="s2_itens_right">
+        <div class="div_carrinho"><a href="perfil.html"><i class="fa-solid fa-user"></i></a>  </div>
+        <div class="div_carrinho"><a href=""><i class="fa-solid fa-cart-shopping"></i></a> </div>
+        <button  onclick="AbrirMenuPesquisar()"><i class="fa-solid fa-search"></i><button/>
+      </div>
+    </section>
+    <section id="section3" class="section3">
+      <div class="div_fechar_menu_pesquisar"><p class="fechar_pesquisa" onclick="FecharMenuPesquisar()">X</p>
+    </div>
+  <div class="div_pesquisar2"><input type="search" class="input_pesquisar" name="" id="" placeholder="Digite o titulo do livro:"> <button type="submit" class="btn_increver-se">Pesquisar</button></div>
+</section>
+
+
+<section class="section_filtro" id="section_filtro">
+  <div>
+  <details id="categorias">
+    <summary>
+       Categorias:
+    </summary>
+    <article>
+
+      <input type="radio" name="categoria" id="categoria" value="s"  ><span>Autoajuda</span>
+      <br> 
+     <input type="radio" name="categoria" id="categoria" value="n" ><span>Contos</span> 
+     <br> 
+     <input type="radio" name="categoria" id="categoria" value="n" ><span>Filosófia</span> 
+     <br> 
+     <input type="radio" name="categoria" id="categoria" value="n" ><span>Negócios</spa> 
+     <br> 
+      <input type="radio" name="categoria" id="categoria" value="n" ><span>Ocultismo</span>
+      <br> 
+    </article></details>
+</div>
+<div>
+    <details id="autores">
+      <summary>
+Autores:
+      </summary>
+      <article>
+  
+        <input type="radio" name="autor" id="autor" value="s"  ><span>Augusto Curry</span>
+      <br>
+      <input type="radio" name="autor" id="autor" value="n" ><span>Napolean Hill</span> 
+      <br>
+      <input type="radio" name="autor" id="autor" value="n" ><span>Nicolau Maquiavel </span> 
+      <br> 
+      <input type="radio" name="autor" id="autor" value="n" ><span>Robert Kiyozaki</span>
+      <br>
+      </article></details>
+  </div>
+  <button class="btn_increver-se">Filtrar</button>
+  </section>
+
+ <!-- Fim header-->
+
+
+
+
+
+
+
+
+
+ <!-- Corpo -->
+
+ <!-- formulario  Editar Autor -->
+<fieldset class="fieldset_criar_conta" >
+    <legend>Editar Autor:</legend>
+    <div style="  margin-top: 5px;">
+      <label for="">Nome do autor:</label>
+      <input class="input_increver-se" type="text" name="" id="" placeholder="Autor:">
+      
+      <button class="btn_increver-se btn_entrar" type="submit">Salvar</button>  
+      </div> 
+  </fieldset>
+  <!-- Fim -->
+ 
+ 
+ <!-- Fim corpo -->
+
+ <!-- Footer-->
+ 
+
+<footer class="rodape">
+  <section  >
+    <div>
+    <details id="categorias">
+      <summary>
+         Livros:
+      </summary>
+      <article>
+         <a href="">Cadastrar</a>
+        <br> 
+        <a href="">Editar</a>
+         <br> 
+         <a href="">Deletar</a>
+      </article></details>
+  </div>
+    </section>
+    <section  >
+      <div>
+      <details id="categorias">
+        <summary>
+         Categorias:
+        </summary>
+        <article>
+           <a href="">Cadastrar</a>
+          <br> 
+          <a href="">Editar</a>
+           <br> 
+           <a href="">Deletar</a>
+        </article></details>
+    </div>
+      </section>
+      <section  >
+        <div>
+        <details id="categorias">
+          <summary>
+          Contactos:
+          </summary>
+          <article>
+             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <br> 
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+             <br> 
+             <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </article></details>
+      </div>
+        </section>
+        <section  >
+          <div>
+          <details id="categorias">
+            <summary>
+             Outros:
+            </summary>
+            <article>
+               <a href="">Cadastrar-se</a>
+              <br> 
+              <a href="">Iniciar sessão</a>
+               <br> 
+               <a href="">Enviar Feedback</a>
+               <br> 
+               <a href="">Livros Favoritos</a>
+            </article></details>
+        </div>
+          </section>
+</footer>
+
+<div class="fim_rodape">
+   
+  <span class="p_rodape">
+   &COPY; 2023 Copyright-Developer L.C.M
+       </span> 
+      
+</div>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>

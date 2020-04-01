@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshopfree</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    
+  </head>
+  <body>
+    <section class="section1">
+      <p class="p_increver-se">
+        Receba convites, sugestões de livros e novidades exclusivas!
+      </p>
+      <input
+      class="input_do_topo"
+        type="text"
+        name=""
+        id=""
+        placeholder="Email:"
+      />
+      <button class="btn_increver-se" type="submit">Inscrever-se</button>
+    </section>
+    <section class="section2">
+      <div class="div_logo">
+        <img
+          class="logotipo"
+          src="logotipos/log.png"
+          alt=""
+        />
+      </div>
+      <div class="s2_itens2">
+        <div>
+          <a href="header.html"><i class="fa-solid fa-house"></i></a>
+          <p>HOME</p>
+        </div>
+        <div>
+          <button id="btn_filtro" onclick="AbrirFecharFiltro()"><i   id="icone_filtro" class="fa-solid fa-greater-than"></i> </button>
+          <p>Filtro</p>
+        </div>
+        <div>
+          <a href=""><i class="fa-solid fa-exclamation"></i></a>
+        <P>SOBRE NÓS</P>
+        </div>
+      </div>
+      <div class="s2_itens_right">
+        <div class="div_carrinho"><a href="perfil.html"><i class="fa-solid fa-user"></i></a>  </div>
+        <div class="div_carrinho"><a href=""><i class="fa-solid fa-cart-shopping"></i></a>  </div>
+        <button  onclick="AbrirMenuPesquisar()"><i class="fa-solid fa-search"></i><button/>
+      </div>
+    </section>
+    <section id="section3" class="section3"><div class="div_fechar_menu_pesquisar"><p class="fechar_pesquisa" onclick="FecharMenuPesquisar()">X</p>
+    </div>
+  <div class="div_pesquisar2"><input type="search" class="input_pesquisar" name="" id="" placeholder="Digite o titulo do livro:"> <button type="submit" class="btn_increver-se">Pesquisar</button></div></section>
+
+
+<section class="section_filtro" id="section_filtro">
+  <div>
+  <details id="categorias">
+    <summary>
+       Categorias:
+    </summary>
+    <article>
+
+      <input type="radio" name="categoria" id="categoria" value="s"  ><span>Autoajuda</span>
+      <br> 
+     <input type="radio" name="categoria" id="categoria" value="n" ><span>Contos</span> 
+     <br> 
+     <input type="radio" name="categoria" id="categoria" value="n" ><span>Filosófia</span> 
+     <br> 
+     <input type="radio" name="categoria" id="categoria" value="n" ><span>Negócios</spa> 
+     <br> 
+      <input type="radio" name="categoria" id="categoria" value="n" ><span>Ocultismo</span>
+      <br> 
+    </article></details>
+</div>
+<div>
+    <details id="autores">
+      <summary>
+Autores:
+      </summary>
+      <article>
+  
+        <input type="radio" name="autor" id="autor" value="s"  ><span>Augusto Curry</span>
+      <br>
+      <input type="radio" name="autor" id="autor" value="n" ><span>Napolean Hill</span> 
+      <br>
+      <input type="radio" name="autor" id="autor" value="n" ><span>Nicolau Maquiavel </span> 
+      <br> 
+      <input type="radio" name="autor" id="autor" value="n" ><span>Robert Kiyozaki</span>
+      <br>
+      </article></details>
+  </div>
+  <button class="btn_increver-se">Filtrar</button>
+  </section>
+
+ <!-- Fim header-->
+
+
+
+
+
+
+
+
+
+ <!-- Corpo -->
+
+<section class="links_encomenda"><div><button>RESUMO</button></div><div><button>ENTRAR</button></div><div><button>ENDEREÇO</button></div><div><button>ENVIO</button></div><div><button>PAGAMENTO</button></div></section>
+
+<!-- Confirmação da encomenda por referência bancaria-->
+<fieldset class="fieldset_criar_conta" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  <legend>Notificação</legend>
+   <span style="font-size: 1em;"><STRong>A sua encomenda  está completa. </STRong><br><br>
+    Para proceder ao pagamento no multicaixa, sigua os seguintes passos: <br> <br> <STRong>1</STRong> pagamentos > <STRong>2</STRong> seguinte > <STRong>3</STRong> compras online > <STRong>4</STRong> Bookshopfree.com <br> <STRong>REFERÊNCIA: 017 756 991 <BR> VALOR: 67 035,00 AKZ </STRong><br> <br><br> OU <br> <br> <br> <STRong>1</STRong> pagamentos > <STRong>2</STRong> seguinte > <STRong>3</STRong> pagamento de serviços <br> <STRong>ENTIDADE: 00415 <BR> REFERÊNCIA: 017 756 991 <BR> VALOR: 67 035,00 AKZ </STRong><br> <br> <br> Foi enviado um e-mail com está informação. <br> <STRong>A confirmação do seu pagamento pode demorar até 1H.  <BR> A sua encomenda será enviada assim que o pagamento for confirmado.</STRong>  <br> Se tiver alguma questão ou informação adicional, por favor contecte a nossa equipa de apoio ao cliente.</span>
+ 
+  <button class="btn_azul_claro" style="margin-bottom: 2px;">Ver HISTÓRICO DE PEDIDOS</button>
+ 
+</fieldset>
+<!-- Fim -->
+
+<!-- Confirmação da encomenda tranferencia bancaria-->
+<fieldset class="fieldset_criar_conta" style="display: none; flex-direction: column; justify-content: center; align-items: center;">
+  <legend>Notificação</legend>
+   <span style="font-size: 1em;"><STRong>A sua encomenda em Bookshopfree Angola está completa. </STRong><br><br>
+    Por favor, envie-nos a tranferencia bancária com <br> -Montante xxxxxxxxkz <br> -Nome do titular da conta <STRong>Bookshopfree </STRong><br> -Inclua estes detalhes<STRong> Banco BFA <br> Número de conta - 13665787730001 (Moeda AKZ) <br> IBAN/NIB - A006 0006 0000 3665 7877 301 15 <BR><BR> Banco BIC <br> Número de conta - 113565311410001(Moeda AKZ) <br> IBAN/NIB - AO06 0051 0000 0284 4739 1016 5 <BR><BR> Banco BAI <br> Número de conta - 102844739 10 001 (Moeda AKZ) <br> IBAN/NIB - AO06 0040 0000 0284 4739 1016 4 </STRong><br> <br> -Nome do banco_____ <br> -Não se esqueça de inserir a referẽncia da sua encomenda PVHINHWNN no assunto da sua transferência bancária. <br> Foi-lhe enviado um e-mail com está confirmação. <br><STRong> A sua encomenda será enviada após recebermos o pagamento.</STRong> <br> Se tiver alguma questão ou informação adicional, por favor contecte a nossa equipa de apoio ao cliente.</span>
+ 
+  <button class="btn_azul_claro" style="margin-bottom: 2px;">Ver HISTÓRICO DE PEDIDOS</button>
+ 
+</fieldset>
+<!-- Fim -->
+
+<!-- Pagar com Multicaxa Online-->
+<fieldset class="fieldset_criar_conta" style="display: none; flex-direction: column; justify-content: center; align-items: center;">
+  <legend>Pagar com Multicaxa Online</legend>
+   <span style="font-size: 1em;">Escolheu com <strong>Multicaxa online</strong>, <br> onde poderá optar por: <br> <strong>MCX Express <br> VISA <br> Mastercard <br> MC Domésticos</strong> <br> <br>  O valor total da sua encomenda é <strong>xxxxxxxxkz</strong>. <br><br>
+   Por favor confirme a sua encomenda por clicar em <strong>"Confirmo a minha encomenda"</strong> <br><br>ATT: Antes de continuar, confirme por favor se os dados de facturação estão corretos.</span>
+<span>Dados: <br> Mr. Learnig <br>Viana <br> Angola <br> Viana</span>
+  <button class="btn_azul_claro" style="margin-bottom: 2px;">Voltar atrás</button>
+  <button class="btn_azul_claro" style="margin-bottom: 5px;">Confirmo a minha encomenda</button>
+</fieldset>
+<!-- Fim -->
+
+<!-- Pagar por Referencia Multicaxa-->
+<fieldset class="fieldset_criar_conta" style="display: none; flex-direction: column; justify-content: center; align-items: center;">
+  <legend>Pagar por Referencia Multicaxa</legend>
+   <span style="font-size: 1em;">Escolheste pagar por <strong>  Referencia Multicaxa.</strong> Aqui está um breve resumo da tua encomenda: <br> - O valor total da sua encomenda é <strong>xxxxxxxxkz</strong>. <br> - As informações para pagamento por  Referencia Multicaxa serão mostrados na proxima página. <br>
+  - Por favor confirme a sua encomenda por clicar em <strong>"Confirmo a minha encomenda"</strong> <br><br>ATT:Antes de continuar, confirme por favor se os dados de facturação estão corretos.</span>
+<span>Dados: <br> Mr. Learnig <br>Viana <br> Angola <br> Viana</span>
+  <button class="btn_azul_claro" style="margin-bottom: 2px;">Voltar atrás</button>
+  <button class="btn_azul_claro" style="margin-bottom: 5px;">Confirmo a minha encomenda</button>
+</fieldset>
+<!-- Fim -->
+
+<!-- Pagar por Transferencia Bancaria-->
+<fieldset class="fieldset_criar_conta" style="display: none; flex-direction: column; justify-content: center; align-items: center;">
+  <legend>Pagar por Transferencia Bancaria</legend>
+   <span style="font-size: 1em;">Escolheu pagar por <strong> transferencia bancária.</strong> Aqui está um breve resumo da sua encomenda: <br> - O valor total da sua encomenda é <strong>xxxxxxxxkz</strong>. <br> - Permitimos o pagamento por transferencia bancaria na seguinte moeda: <strong> Kwanza</strong> <br> - A informação sobre os dados para transferencia bancaria serão mostrados na proxima página. <br>
+  - Por favor confirme a sua encomenda por clicar em <strong>"Confirmo a minha encomenda"</strong> <br><br>ATT:Antes de continuar, confirme por favor se os dados de facturação estão corretos.</span>
+<span>Dados: <br> Mr. Learnig <br>Viana <br> Angola <br> Viana</span>
+  <button class="btn_azul_claro" style="margin-bottom: 2px;">Voltar atrás</button>
+  <button class="btn_azul_claro" style="margin-bottom: 5px;">Confirmo a minha encomenda</button>
+</fieldset>
+<!-- Fim -->
+
+ 
+
+<!-- Metodo de pagamento-->
+<fieldset class="fieldset_criar_conta" style="display: none; justify-content: center; align-items: center;">
+  <legend>Seleciona um tipo de pagamento</legend>
+   <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 5px;">
+    <button class="btn_azul_claro">Pagar por Transferencia Bancaria</button>
+    <button class="btn_azul_claro">Pagar por Referencia Multicaxa</button>
+    <button class="btn_azul_claro">Pagar com multicaxa EXPRESS</button>
+   </div>
+</fieldset>
+<!-- Fim -->
+
+<!-- formulario Definir tipo de envio-->
+<fieldset class="fieldset_criar_conta" style="display: none; flex-direction: column; justify-content: center; align-items: center;">
+  <legend>Opção de envio</legend>
+   <span>Deseja receber os livros físicos no endereço selecionado? <input type="radio" name="" id=""></span>
+    <span>Receberá os livros  físicos pessoalmente na nossa loja.<input type="radio" name="" id=""></span>
+
+    <span>Os livros em formato digital receberás no teu e-mail.</span>
+</fieldset>
+<!-- Fim -->
+
+
+<!-- formulario adicionar endereço-->
+<fieldset class="fieldset_criar_conta" style="display: none; justify-content: center;">
+  <legend>Adicionar novo endereço</legend>
+   
+  <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Clique aqui</button>
+ 
+</fieldset>
+<!-- Fim -->
+
+<!-- formulario endereço existente-->
+<fieldset class="fieldset_criar_conta" style="display: none;  justify-content: center; align-items: center; flex-wrap: wrap;">
+  <legend>Teus endereços existentes</legend>
+  <div class="end_existente">
+<Span>Mr. Learning</Span>
+<Span>Viana</Span>
+<Span>938092678</Span>
+<Span>Angola</Span>
+<Span>Viana</Span> 
+<button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Selecionar</button>
+  <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Atualizar</button>
+  </div>
+  <div class="end_existente">
+    <Span>Mr. Learning</Span>
+    <Span>Viana</Span>
+    <Span>938092678</Span>
+    <Span>Angola</Span>
+    <Span>Viana</Span> 
+    <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Selecionar</button>
+      <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Atualizar</button>
+      </div>
+      <div class="end_existente">
+        <Span>Mr. Learning</Span>
+        <Span>Viana</Span>
+        <Span>938092678</Span>
+        <Span>Angola</Span>
+        <Span>Viana</Span> 
+        <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Selecionar</button>
+          <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Atualizar</button>
+          </div>
+          <div class="end_existente">
+            <Span>Mr. Learning</Span>
+            <Span>Viana</Span>
+            <Span>938092678</Span>
+            <Span>Angola</Span>
+            <Span>Viana</Span> 
+            <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Selecionar</button>
+              <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Atualizar</button>
+              </div>
+              <div class="end_existente">
+                <Span>Mr. Learning</Span>
+                <Span>Viana</Span>
+                <Span>938092678</Span>
+                <Span>Angola</Span>
+                <Span>Viana</Span> 
+                <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Selecionar</button>
+                  <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Atualizar</button>
+                  </div>
+                  <div class="end_existente">
+                    <Span>Mr. Learning</Span>
+                    <Span>Viana</Span>
+                    <Span>938092678</Span>
+                    <Span>Angola</Span>
+                    <Span>Viana</Span> 
+                    <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Selecionar</button>
+                      <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Atualizar</button>
+                      </div>
+                      <div class="end_existente">
+                        <Span>Mr. Learning</Span>
+                        <Span>Viana</Span>
+                        <Span>938092678</Span>
+                        <Span>Angola</Span>
+                        <Span>Viana</Span> 
+                        <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Selecionar</button>
+                          <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Atualizar</button>
+                          </div>
+                          <div class="end_existente">
+                            <Span>Mr. Learning</Span>
+                            <Span>Viana</Span>
+                            <Span>938092678</Span>
+                            <Span>Angola</Span>
+                            <Span>Viana</Span> 
+                            <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Selecionar</button>
+                              <button class="btn_increver-se" type="submit" style="margin-bottom: 5px;">Atualizar</button>
+                              </div>
+</fieldset>
+<!-- Fim -->
+
+<!-- preco total e quantidade de produtos -->
+<section class="section_info" style="display: none;">
+  <span>O seu carrinho tens x livros</span>
+  <span>Preço total: 10.000 AKZ</span>
+  <span style="display: flex; align-items: center; flex-wrap: wrap;">Todos em formato físico<input type="radio" name="" id="" style="margin-right: 5px;">  ou Digital<input type="radio" name="" id=""></span>
+</section>
+<!-- Fim -->
+
+<!-- formularios criar -->
+<fieldset class="fieldset_criar_conta">
+  <legend>Criar conta</legend>
+  <span>*Por favor insere o teu e-mail para criar a conta.</span>
+  <div>
+    <input class="input_increver-se" type="text" name="" id="" placeholder="E-mail"> <button class="btn_increver-se" type="submit">Criar</button>
+  </div>
+</fieldset>
+<!-- Fim -->
+
+<!-- formularios  registar-se -->
+<fieldset class="fieldset_criar_conta">
+  <legend>Já estás registado?</legend>
+  <div style="  margin-top: 5px;">
+    <label for="">E-mail:</label>
+    <input class="input_increver-se" type="text" name="" id="" placeholder="E-mail">
+    <label for="" style="margin-top: 3px;">Palavra-passe:</label>
+    <input class="input_increver-se" type="text" name="" id="" placeholder="Palavra-passe">
+     <button class="btn_increver-se btn_entrar" type="submit">Entrar</button> 
+     <button class="btn_esquecer"    type="submit">Esqueceste da tua palavra-passe</button>
+    </div>
+
+    <div style="  margin-top: 5px; margin-left: 2px;">
+      <span>*Tambem podes entrar com a tua conta de facebook,</span>
+      <button class="btn_esquecer"   type="submit">Entrar com facebok</button>
+      
+    </div>
+  
+</fieldset>
+<!-- Fim -->
+
+
+<!-- formulario  checkout -->
+<fieldset class="fieldset_criar_conta">
+  <legend>Checkout Instantâneo</legend>
+  <div style="  margin-top: 5px;">
+    <label for="">E-mail:</label>
+    <input class="input_increver-se" type="text" name="" id="" placeholder="E-mail">
+    </div>
+    <div style="margin-left: 2px; display: flex; align-items: center; color: rgb(202, 202, 202);" ><span style="margin-right: 2px;">Titulo:</span><input type="radio" name="titulo" id="">Sr. <input type="radio" style="margin-left: 2px;" name="titulo" id="">Sra.</div>
+<div>
+  <label for="">Nome:</label>
+  <input class="input_increver-se" type="text" name="" id="" placeholder="Nome Proprio">
+    </div>
+    <div>
+      <label for="">Apelido:</label>
+       <input class="input_increver-se" type="text" name="" id="" placeholder="Apelido">
+        </div>
+    <div >
+      <label for="">Data de nascimento:</label>
+    <input class="input_increver-se" type="date" name="" id="" >
+    </div>
+    <div style="margin-left: 5px; display: flex; align-items: center;"><input class=" " type="checkbox" name="" id="" placeholder="E-mail"><span>Subscreve a nossa newsletter</span>
+    </div>
+  
+</fieldset>
+<!-- Fim --> 
+
+<!-- formulario  Endereço de entrega -->
+<fieldset class="fieldset_criar_conta">
+  <legend>Endereço de Entrega</legend>
+  <div style="  margin-top: 5px;">
+    <label for="">Endereço:</label>
+    <input class="input_increver-se" type="text" name="" id="" placeholder="Endereço:">
+    </div>
+    <div style="  margin-top: 2px;">
+      <label for="">Empresa:</label>
+      <input class="input_increver-se" type="text" name="" id="" placeholder="Empresa:">
+      </div>
+      <div style="  margin-top: 2px; ">
+        <label for="">País:</label>
+        <select name="f_cor" class="input_increver-se"> 
+          <option value="ip3d7">Angola</option>
+          <option value="t98">Zambia</option> 
+         </select>
+        </div>
+        <div style="  margin-top: 2px; ">
+          <label for="">Cidade:</label>
+          <input class="input_increver-se" type="text" name="" id="" placeholder="Cidade:">
+          </div>
+          <div style="  margin-top: 2px; ">
+            <label for="">Provincia:</label>
+            <select name="f_cor" class="input_increver-se"> 
+              <option value="t98">Bie</option>  <option value="ip3d7">Luanda</option> 
+             </select>
+            </div>
+      <div style="  margin-top: 2px;">
+        <label for="">Telemovel:</label>
+        <input class="input_increver-se" type="text" name="" id="" placeholder="Telemovel:">
+        </div>
+        <div style="margin-left: 5px; display: flex; align-items: center;"><input class=" " type="checkbox" name="" id="" placeholder="E-mail"><span>Por Favor usa outro endereço para a fatura</span>
+        </div>
+</fieldset>
+<!-- Fim --> 
+
+<!-- Itens do carrinho -->
+<article class="itens_no_carrinho">
+    <section class="section_info_itens_no_carrinho1">
+        <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+    </section>
+    <section class="section_info_itens_no_carrinho1">
+      <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+  </section>
+  <section class="section_info_itens_no_carrinho1">
+    <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+<section class="section_info_itens_no_carrinho1">
+  <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+<section class="section_info_itens_no_carrinho1">
+  <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+<section class="section_info_itens_no_carrinho1">
+  <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+<section class="section_info_itens_no_carrinho1">
+  <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+<section class="section_info_itens_no_carrinho1">
+  <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+<section class="section_info_itens_no_carrinho1">
+  <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+<section class="section_info_itens_no_carrinho1">
+  <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+<section class="section_info_itens_no_carrinho1">
+  <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+<section class="section_info_itens_no_carrinho1">
+  <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+<section class="section_info_itens_no_carrinho1">
+  <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+<section class="section_info_itens_no_carrinho1">
+  <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+</section>
+ <section class="section_info_itens_no_carrinho1">
+        <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+    </section>
+   <section class="section_info_itens_no_carrinho1">
+        <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+    </section>
+   <section class="section_info_itens_no_carrinho1">
+        <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+    </section>
+   <section class="section_info_itens_no_carrinho1">
+        <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+    </section>
+   <section class="section_info_itens_no_carrinho1">
+        <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+    </section>
+   <section class="section_info_itens_no_carrinho1">
+        <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+    </section>
+   <section class="section_info_itens_no_carrinho1">
+        <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+    </section>
+   <section class="section_info_itens_no_carrinho1">
+        <div class="div_capa_livro" style="height: 70px; width: 70px;"><img  src="livros/Captura de ecrã_2020-04-01_19-39-15-1.png"  alt=""></div> <div  class="info_itens_carrinho2"><span>NOME: Iron Man</span> <span>CATEGORIA: Conto</span> <span>AUTOR: Eoin Cofle</span> <span>PREÇO: 10.000 Akz</span> <span>F<input type="radio" name="" id="">  D<input type="radio" name="" id=""></span> </div> <DIV><button class="btn_del_iten_carrinho"><i class="fa-solid fa-delete-left"></i></button></DIV>
+    </section>
+  
+    
+    
+  </article>
+ 
+  <section class="section_btns_encomenda">
+    <div><button class="btn_increver-se">Seguinte</button></div>
+    <div><a href="" class="ctn_compra">« Continuar compra</a></div>
+   
+    <div><button class="btn_increver-se">Cons. preço</button></div>
+  </section>
+ <!-- Fim corpo -->
+ 
+
+
+ <!-- Footer-->
+  
+<!--Voltar ao topo-->
+
+<div id="btnTop">
+  <i class="arrow up"></i> 
+</div>
+ <!-- fim-->
+
+<footer class="rodape">
+  <section  >
+    <div>
+    <details id="categorias">
+      <summary>
+         Livros:
+      </summary>
+      <article>
+         <a href="">Cadastrar</a>
+        <br> 
+        <a href="">Editar</a>
+         <br> 
+         <a href="">Deletar</a>
+      </article></details>
+  </div>
+    </section>
+    <section  >
+      <div>
+      <details id="categorias">
+        <summary>
+         Categorias:
+        </summary>
+        <article>
+           <a href="">Cadastrar</a>
+          <br> 
+          <a href="">Editar</a>
+           <br> 
+           <a href="">Deletar</a>
+        </article></details>
+    </div>
+      </section>
+      <section  >
+        <div>
+        <details id="categorias">
+          <summary>
+          Contactos:
+          </summary>
+          <article>
+             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <br> 
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+             <br> 
+             <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </article></details>
+      </div>
+        </section>
+        <section  >
+          <div>
+          <details id="categorias">
+            <summary>
+             Outros:
+            </summary>
+            <article>
+               <a href="">Cadastrar-se</a>
+              <br> 
+              <a href="">Iniciar sessão</a>
+               <br> 
+               <a href="">Enviar Feedback</a>
+               <br> 
+               <a href="">Livros Favoritos</a>
+            </article></details>
+        </div>
+          </section>
+</footer>
+
+<div class="fim_rodape">
+   
+  <span class="p_rodape">
+   &COPY; 2023 Copyright-Developer L.C.M
+       </span> 
+      
+</div>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>
